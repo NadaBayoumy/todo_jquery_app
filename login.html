@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+<link rel="stylesheet" type="text/css" href="node_modules/bootstrap/dist/css/bootstrap-theme.min.css">
+<link rel="stylesheet" type="text/css" href="node_modules/bootstrap-dialog/dist/css/bootstrap-dialog.min.css">
+<link rel="stylesheet" type="text/css" href="css/loginmodule.css">
+</head>
+<body>
+<div class="container">
+<div class="jumbotron">
+          <h1>Cross Over TODO App!</h1>
+          <p>This is an app to create, edit and organize your upcoming tasks</p>
+</div>
+
+
+<form action="/action_page.php">
+  <div class="imgcontainer">
+    <img src="images/img_avatar2.png" alt="Avatar" class="avatar">
+  </div>
+
+  <div class="container">
+    <label><b>Username</b></label>
+    <input type="text" placeholder="Enter email" name="email" id="email" required>
+
+    <label><b>Password</b></label>
+    <input type="password" placeholder="Enter Password" name="password" id="password" required>
+        
+    <button type="button" id="loginuser" onclick="CheckUser();">Login User</button>
+  </div>
+
+
+  <div id="alert-modal" class="modal fade danger">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 id="alert-modal-title" class="modal-title"></h4>
+      </div>
+      <div id="alert-modal-body" class="modal-body"></div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+  </div>
+
+</form>
+</div>
+<script type="text/javascript" src="node_modules/jquery/dist/jquery.min.js"></script>
+<script type="text/javascript" src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="node_modules/bootstrap-dialog/dist/js/bootstrap-dialog.min.js"></script>
+<script type="text/javascript" src="js/loginmodule.js"></script>
+
+
+</body>
+</html>

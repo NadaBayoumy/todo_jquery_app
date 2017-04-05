@@ -1,0 +1,47 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<link rel="stylesheet" type="text/css" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+		<link rel="stylesheet" type="text/css" href="node_modules/bootstrap/dist/css/bootstrap-theme.min.css">
+		<link rel="stylesheet" type="text/css" href="node_modules/bootstrap-dialog/dist/css/bootstrap-dialog.min.css">
+		<link rel="stylesheet" type="text/css" href="css/loginmodule.css">
+		<link rel="stylesheet" type="text/css" href="css/todostyle.css">
+		<link rel="stylesheet" type="text/css" href="css/animate.css">
+	</head>
+	<body>
+		<div class="container">
+
+			<div class="row">
+					<a href="login.html" class="btn btn-primary logoutcls"> logout </a>
+						<input type="text" class="form-control searchtxt" name="searchtxt" id="searchtxt" />
+						<input type="submit" id="searchbtn" name="searchbtn" class="btn btn-default searchbtn" value="search" />
+				</div>
+
+				<div class="jumbotron">
+				  <h1>Cross Over TODO App!</h1>
+				  <p>This is an app to create, edit and organize your upcoming tasks</p>
+				</div>
+
+				<div id="divCompleted"  ondragover="dragover(event)" ondrop="drop(event)">
+					<div class="alert alert-success" role="alert">Well done! You successfully completed all these todo items</div>
+					<div>
+					    <button id='addcompleted' class='add completed'> <span class="glyphicon glyphicon-plus" aria-hidden="true"></span> ADD In Completed </button>
+					</div>
+				</div>
+				<div id="divUncompleted"  ondragover="dragover(event)" ondrop="drop(event)">
+					<div class="alert alert-warning" role="alert">Hurry up! You have to complete all these todo items</div>
+					<button id='adduncompleted' class='add uncompleted'> <span class="glyphicon glyphicon-plus" aria-hidden="true"></span> Add In Un Completed </button>
+				</div>
+		</div>
+
+		<script type="text/javascript" src="node_modules/jquery/dist/jquery.min.js"></script>
+		<script type="text/javascript" src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+		<script type="text/javascript" src="node_modules/bootstrap-dialog/dist/js/bootstrap-dialog.min.js"></script>
+
+		<script type="text/javascript" src="js/loginmodule.js"></script>
+		<script type="text/javascript" src="js/todomodel.js"></script>
+		<script type="text/javascript" src="js/todoscript.js"></script>
+		<script type="text/javascript" src="js/viewportchecker.js"></script>
+
+	</body>
+</html>

@@ -1,0 +1,41 @@
+TODO Application
+*****************
+Author: Nada El Bayoumy Ahmed
+ITI, Alexandria Branch, Open Source Track
+
+
+general instructions:
+********************
+open terminal and type command npm install to install dependencies
+
+
+notes for DB
+************
+1-create database already covered with method openDatabase in file loginmodule.js
+database name is 'TaskDb'
+2- create table 'users' already called to create if not EXISTS
+3- type sql query in application tab in console > insert into users('nada@nada.com',1)
+to login with it.
+4- you need to call method tasksfns.createTable in console
+
+
+General App Comments
+********************
+1- i am calling set time out before reloading the browser because elements does not load before certain interval using a method called "explode"
+2- The Main page of todo app called "login.html" this is the login page to set the local storage by the email to be the user session
+3- logout button do two things, A) redirect to login page B) empty the local storage
+4- main todo application page called index.html
+5- the main key in tasks table is: 'name' which i delete and update using it
+6- double click opens the form of editing task in the same place with the following comments:
+*I am updating with name and it is supposed to be un-editable. Its value is not changing according to query but it opens in edit mode just in show
+*Update description of task successfully committed on clicking the button update.
+7- double click to update task is not working properly on all clicks depending on the target event
+(Recommended: click in an empty place, or at the bottom of the task element div)
+
+
+
+
+Login user
+**********
+the login user 'nada@nada.com'
+password: 1

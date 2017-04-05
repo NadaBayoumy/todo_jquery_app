@@ -1,0 +1,19 @@
+{
+  "name": "todo_project_jquery",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "jquery": "^3.2.1"
+  },
+  "devDependencies": {
+    "bootstrap": "^3.3.7",
+    "glyphicons": "^0.2.0",
+    "jquery-ui": "^1.12.1"
+  }
+}
